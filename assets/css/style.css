@@ -1046,6 +1046,11 @@ body {
     font-size: 28px;
   }
 
+  .qa-section .qa-content .taps-div .tap-content .ques-name .tap-title {
+    font-size: 14px;
+    padding: 0 10px 0 0;
+  }
+
   .footer-section .footer-title {
     margin: 20px 0 10px;
   }
