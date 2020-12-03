@@ -1,17 +1,5 @@
 $(document).ready(function(){
-   // comment slider
-   $(".comment-slider").slick({
-    dots: false,
-    speed: 300,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    fade: true,
-    autoplay: false,
-    autoplaySpeed: 2000,
-    prevArrow: "<div class='arrow-slider-header left-arrow'> <i class='fas fa-arrow-left'></i></div>",
-    nextArrow: "<div class='arrow-slider-header right-arrow'> <i class='fas fa-arrow-right'></i></div>",
-});
+
 
     // opne sub menu
     $('.nav-section .mobile-menu ul li.has-chiled a').click(function(){
@@ -50,23 +38,22 @@ $(document).ready(function(){
         dots: false,
         adaptiveHeight: true,
         autoplaySpeed: 1000,
-        centerMode: true,
-        centerPadding: '20px',
-        arrows:false,
+        arrows:true,
+        prevArrow: "<div class='arrow-slider left-arrow'> <i class='fas fa-caret-left'></i></div>",
+        nextArrow: "<div class='arrow-slider right-arrow'> <i class='fas fa-caret-right'></i></div>",
         responsive: [
             {
                 breakpoint: 992,
                 settings: {
                     slidesToShow: 4,
                     slidesToScroll: 1,
-                    centerMode: false,
                 },
             },
             {
                 breakpoint: 772,
                 settings: {
-                    centerMode: false,
-                    slidesToShow: 2,
+                    arrows:false,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
                     arrows: false,
                 },
@@ -74,7 +61,19 @@ $(document).ready(function(){
         ],
     });
 
-
+   // comment slider
+   $(".comment-slider").slick({
+    dots: false,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    prevArrow: "<div class='arrow-slider-header left-arrow'> <i class='fas fa-arrow-left'></i></div>",
+    nextArrow: "<div class='arrow-slider-header right-arrow'> <i class='fas fa-arrow-right'></i></div>",
+});
 
 
 });
