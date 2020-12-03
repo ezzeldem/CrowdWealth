@@ -58,6 +58,15 @@ $(document).ready(function(){
                     arrows: false,
                 },
             },
+            {
+                breakpoint: 500,
+                settings: {
+                    arrows:false,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    arrows: false,
+                },
+            },
         ],
     });
 
