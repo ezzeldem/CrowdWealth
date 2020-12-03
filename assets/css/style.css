@@ -1042,6 +1042,10 @@ body {
 }
 
 @media (max-width: 772px) {
+  .investors-section .investors-content .title {
+    font-size: 28px;
+  }
+
   .raise-section .raise-contant .raise-ul ul li .prag-ul {
     width: 100%;
   }
