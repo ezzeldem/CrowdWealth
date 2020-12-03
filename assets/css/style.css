@@ -1046,6 +1046,10 @@ body {
     font-size: 28px;
   }
 
+  .footer-section .footer-title {
+    margin: 20px 0 10px;
+  }
+
   .raise-section .raise-contant .raise-ul ul li .prag-ul {
     width: 100%;
   }
