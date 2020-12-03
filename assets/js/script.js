@@ -32,4 +32,49 @@ $(document).ready(function(){
         $('.over-lay').hide();
     });
     
+
+
+
+
+
+
+
+
+
+
+    $(".partners-slide").slick({
+        infinite: true,
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        autoplay: true,
+        dots: false,
+        adaptiveHeight: true,
+        autoplaySpeed: 1000,
+        centerMode: true,
+        centerPadding: '20px',
+        arrows:false,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    centerMode: false,
+                },
+            },
+            {
+                breakpoint: 772,
+                settings: {
+                    centerMode: false,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    arrows: false,
+                },
+            },
+        ],
+    });
+
+
+
+
 });
