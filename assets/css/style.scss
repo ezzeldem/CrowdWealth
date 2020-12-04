@@ -50,7 +50,58 @@ body {
   font-weight: 500;
   color: rgba($black-color, 0.8);
 }
+.intro-count-box {
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+  .count-box {
+    margin: 0 20px 0 0;
+    display: flex;
+    align-items: center;
+    .img-box {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      height: 70px;
+      width: 70px;
+      border-radius: 10px;
+      margin: 0 20px 0 0;
+      &.green-box {
+        background-color: rgba($green-color, 0.1);
+      }
+      &.blue-box {
+        background-color: rgba($blue-color, 1);
+      }
+      &.orang-box {
+        background-color: rgba($orang-color, 1);
+      }
+      &.bage-box {
+        background-color: rgba($bage-color, 0.1);
+      }
+    }
+    .dis-box {
+      .count-number {
+        font-size: 26px;
+        font-weight: 800;
+        color: rgba($black-color, 1);
+        margin: 0 0 8px;
+      }
+      .count-title {
+        font-size: 20px;
+        font-weight: 500;
+        color: rgba($gray-color, 0.7);
+      }
+    }
+  }
+}
 
+.progress {
+  border-radius: 50px;
+  .progress-bar {
+    border-radius: 50px;
+    background-color: rgba($green-color2, 1);
+  }
+}
 .link-box {
   &.box-2 {
     a {
@@ -89,7 +140,47 @@ body {
     }
   }
 }
+.sallary-box {
+  margin: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  .sallary-number {
+    .number {
+      font-size: 22px;
+      font-weight: 600;
+      color: rgba($black-color, 1);
+      margin: 0 0 9px;
+    }
+    span {
+      font-size: 16px;
+      color: rgba($gray-color, 1);
+      font-weight: 400;
+    }
+  }
+}
 
+.tage-box {
+  display: flex;
+  padding: 10px 0 30px;
+  flex-wrap: wrap;
+  .tag {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: rgba($green-color, 0.2);
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 10px;
+    color: rgba($green-color, 1);
+    &.blue-tag {
+      color: rgba($blue-color2, 1);
+      background-color: rgba($blue-color, 0.7);
+    }
+    &.orang-tag {
+      color: rgba($orang-color2, 1);
+      background-color: rgba($orang-color, 0.7);
+    }
+  }
+}
 .section-title {
   margin: 0 0 70px;
   .title {
@@ -277,47 +368,6 @@ body {
         font-weight: 600;
       }
     }
-    .intro-count-box {
-      display: flex;
-      align-items: center;
-      margin: 40px 0;
-      .count-box {
-        margin: 0 20px 0 0;
-        display: flex;
-        align-items: center;
-        .img-box {
-          align-items: center;
-          display: flex;
-          justify-content: center;
-          height: 70px;
-          width: 70px;
-          border-radius: 10px;
-          margin: 0 20px 0 0;
-          &.green-box {
-            background-color: rgba($green-color, 0.1);
-          }
-          &.blue-box {
-            background-color: rgba($blue-color, 1);
-          }
-          &.orang-box {
-            background-color: rgba($orang-color, 1);
-          }
-        }
-        .dis-box {
-          .count-number {
-            font-size: 26px;
-            font-weight: 800;
-            color: rgba($black-color, 1);
-            margin: 0 0 8px;
-          }
-          .count-title {
-            font-size: 20px;
-            font-weight: 500;
-            color: rgba($gray-color, 0.7);
-          }
-        }
-      }
-    }
   }
 }
 
@@ -355,53 +405,7 @@ body {
         width: 85%;
         padding: 10px 0;
       }
-      .tage-box {
-        display: flex;
-        padding: 10px 0 30px;
-        flex-wrap: wrap;
-        .tag {
-          padding: 10px 20px;
-          border-radius: 50px;
-          background-color: rgba($green-color, 0.2);
-          font-size: 14px;
-          font-weight: 400;
-          margin: 0 10px;
-          color: rgba($green-color, 1);
-          &.blue-tag {
-            color: rgba($blue-color2, 1);
-            background-color: rgba($blue-color, 0.7);
-          }
-          &.orang-tag {
-            color: rgba($orang-color2, 1);
-            background-color: rgba($orang-color, 0.7);
-          }
-        }
-      }
-      .progress {
-        border-radius: 50px;
-        .progress-bar {
-          border-radius: 50px;
-          background-color: rgba($green-color2, 1);
-        }
-      }
-      .sallary-box {
-        margin: 20px 30px;
-        display: flex;
-        justify-content: space-between;
-        .sallary-number {
-          .number {
-            font-size: 22px;
-            font-weight: 600;
-            color: rgba($black-color, 1);
-            margin: 0 0 9px;
-          }
-          span {
-            font-size: 16px;
-            color: rgba($gray-color, 1);
-            font-weight: 400;
-          }
-        }
-      }
+
       .link-box {
         a {
           text-align: center;
@@ -751,32 +755,32 @@ body {
   }
   .intro-section {
     .intro-content {
-      .intro-count-box {
-        .count-box {
-          .img-box {
-            height: 46px;
-          }
-          .dis-box {
-            .count-number {
-              font-size: 20px;
-            }
-            .count-title {
-              font-size: 14px;
-            }
-          }
+    }
+  }
+  .sallary-box {
+    .sallary-number {
+      .number {
+        font-size: 16px !important;
+      }
+    }
+  }
+  .intro-count-box {
+    .count-box {
+      .img-box {
+        height: 46px;
+      }
+      .dis-box {
+        .count-number {
+          font-size: 20px;
+        }
+        .count-title {
+          font-size: 14px;
         }
       }
     }
   }
   .investment-section {
     .investment-box {
-      .sallary-box {
-        .sallary-number {
-          .number {
-            font-size: 16px !important;
-          }
-        }
-      }
       .investment-dit {
         .link-box {
           a {
@@ -1095,14 +1099,14 @@ body {
         margin: 18px 0;
         width: 100%;
       }
-      .intro-count-box {
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 26px 0;
-        .count-box {
-          margin: 5px 0;
-        }
-      }
+    }
+  }
+  .intro-count-box {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 26px 0;
+    .count-box {
+      margin: 5px 0;
     }
   }
   .comment-section {
@@ -1248,6 +1252,11 @@ body {
   padding: 60px 0;
   margin: 60px 0;
   background-color: rgba($gray-color2, 1);
+  &.partners-section2 {
+    background-color: transparent;
+    padding: 60px 0;
+  margin: 0px 0;
+  }
   .partners-title {
     text-align: center;
     font-size: 28px;
@@ -1343,3 +1352,592 @@ body {
     }
   }
 }
+
+// details-intro-section
+
+.details-intro-section {
+  .section-title {
+    margin: 0;
+    text-align: start;
+    .details-intro-box {
+      display: flex;
+      justify-content: space-between;
+      .prag {
+        width: 46%;
+        margin: 10px 0 !important;
+      }
+      .tage-box {
+        margin: 40px 0;
+      }
+      .intro-box {
+        display: flex;
+        a {
+          margin: 0 0 0 30px;
+          font-size: 20px;
+          @extend.trans-4;
+          font-weight: 300;
+          color: rgba($darck-color, 1);
+          &:hover {
+            color: rgba($green-color, 1);
+          }
+        }
+      }
+    }
+  }
+}
+
+// details-intro-section
+
+// salary-section
+
+.salary-section {
+  .salary-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    .salary-nmber {
+      font-size: 40px;
+      font-weight: 600;
+      color: rgba($darck-color, 1);
+    }
+    .salary-nmber-off {
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba($gray-color, 1);
+      margin: 10px 0 25px;
+    }
+    .sallary-box {
+      margin: 40px 0;
+      .sallary-number {
+        display: flex;
+        align-items: center;
+        .number {
+          font-size: 26px;
+          font-weight: 400;
+        }
+        .sllary-discr {
+          margin: 0 20px;
+          font-size: 18px;
+          color: rgba($gray-color, 1);
+          font-weight: 400;
+        }
+      }
+    }
+
+    .invest-box {
+      display: flex;
+      align-items: center;
+      .count-investment {
+        margin: 0 40px;
+        .count {
+          font-size: 26px;
+          color: rgba($gray-color, 1);
+          font-weight: 600;
+        }
+        .count-discr {
+          margin: 12px 0 0;
+          font-size: 16px;
+          color: rgba($gray-color, 0.6);
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .advantages-box {
+    margin: 40px 0;
+    padding: 35px 40px;
+    border-radius: 10px;
+    background-color: rgba($gray-color2, 0.7);
+    .intro-count-box {
+      justify-content: space-between;
+      margin: 0;
+    }
+  }
+}
+
+// salary-section
+
+.overview-section {
+  .overview-box {
+    margin: 0 0 60px;
+    .overview-title {
+      padding: 0 0 20px;
+      font-size: 24px;
+      font-weight: 400;
+      color: rgba($gray-color, 1);
+      border-bottom: 1px solid rgba($gray-color, 0.1);
+      margin: 0 0 30px;
+    }
+    .prag {
+      font-size: 14px;
+      line-height: 28px;
+      color: rgba($gray-color, 1);
+    }
+    .overview-table {
+      width: 100%;
+      tr {
+        height: 40px;
+        &:nth-child(even) {
+          background-color: rgba($blue-color, 0.5);
+        }
+        th {
+          font-size: 16px;
+          color: rgba($black-color, 1);
+          font-weight: 500;
+          text-align: center;
+        }
+        td {
+          font-size: 14px;
+          color: rgba($darck-color, 1);
+          font-weight: 500;
+          text-align: center;
+          &.td-title {
+            text-align: start;
+            font-size: 14px;
+            color: rgba($darck-color, 1);
+            font-weight: 600;
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .detiles-box {
+    display: flex;
+    background-color: rgba($gray-color2, 1);
+    padding: 30px 26px;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px 0;
+    justify-content: space-between;
+    min-height: 130px;
+    .detiles-box-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin: 0 0 0 20px;
+      color: rgba($darck-color, 1);
+    }
+  }
+  .startup-title {
+    font-size: 20px;
+    color: rgba($darck-color, 1);
+    font-weight: 500;
+    margin: 40px 0 20px;
+  }
+  .startup-img {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 50px;
+    img {
+      height: 164px;
+      object-fit: contain;
+    }
+  }
+  .side-box {
+    padding: 20px;
+    border: 1px solid rgba($gray-color, 0.1);
+    border-radius: 10px;
+    margin: 30px 0;
+    &:first-of-type {
+      margin: 0 0 30px;
+    }
+    .side-title {
+      font-size: 24px;
+      color: rgba($darck-color, 1);
+      font-weight: 500;
+      margin: 0 0 20px;
+      &.line-under {
+        padding: 0 0 30px 0;
+        border-bottom: 1px solid rgba($gray-color, 0.1);
+      }
+    }
+    canvas {
+      width: 290 !important;
+      height: 290 !important;
+      margin: 0 auto;
+    }
+    .canvas-ul {
+      margin: 40px 20px 0;
+      ul {
+        li {
+          position: relative;
+          padding: 0 30px;
+          font-size: 14px;
+          color: rgba($darck-color, 1);
+          margin: 0 5px;
+          &:nth-child(1) {
+            &:after {
+              background-color: rgba($green-color, 1);
+            }
+          }
+          &:nth-child(2) {
+            &:after {
+              background-color: rgba($bage-color, 1);
+            }
+          }
+          &:nth-child(3) {
+            &:after {
+              background-color: rgba($blue-color2, 1);
+            }
+          }
+          &::after {
+            content: "";
+            top: 50%;
+            left: 0%;
+            transform: translateY(-50%);
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+    .traction-line {
+      margin: 40px 0 0;
+      &:first-of-type {
+        margin: 0;
+      }
+
+      .traction-content-box {
+        display: flex;
+        align-items: center;
+        .traction-content {
+          flex: 50%;
+          border-right: 1px solid rgba($gray-color, 0.1);
+          margin: 0 20px 0 0;
+          &:last-of-type {
+            border-right: 0;
+          }
+
+          .traction-number {
+            font-size: 22px;
+            font-weight: 600;
+            color: rgba($green-color, 1);
+            margin: 0 0 10px;
+          }
+          .prag {
+            font-size: 13px;
+            font-weight: 400;
+            color: rgba($gray-color, 1);
+          }
+        }
+      }
+    }
+    .model-box {
+      border-bottom: 1px solid rgba($gray-color, 0.1);
+      padding: 20px 0;
+      &:last-of-type {
+        padding: 20px 0 0;
+        border-bottom: 0;
+      }
+      .model-frist-line {
+        display: flex;
+        margin: 0 0 10px;
+        align-items: center;
+        justify-content: space-between;
+        .model-title {
+          font-size: 18px;
+          font-weight: 500;
+          color: rgba($darck-color, 1);
+          span {
+            padding: 20px;
+            font-size: 14px;
+            color: rgba($gray-color, 0.6);
+          }
+        }
+        a {
+          color: rgba($bage-color, 1);
+          font-size: 20px;
+          font-weight: 700;
+          @extend.trans-4;
+          &:hover {
+            color: rgba($darck-color, 1);
+          }
+        }
+      }
+      .modle-number {
+        font-size: 22px;
+        color: rgba($green-color, 1);
+        font-weight: 500;
+      }
+    }
+    .qa-content {
+      .taps-div {
+        .tap-content {
+          margin: 10px 0;
+          padding: 0 0 20px;
+          border-bottom: 1px solid rgba($gray-color, 0.1);
+
+          .ques-name {
+            display: flex;
+            cursor: pointer;
+            justify-content: space-between;
+            width: 100%;
+            margin: 10px 0;
+            &.collapsed {
+              .tap-title {
+                color: rgba($darck-color, 1);
+              }
+              i {
+                color: rgba($bage-color, 1);
+                transform: rotate(0deg);
+              }
+            }
+            .tap-title {
+              font-size: 14px;
+              font-weight: 400;
+              color: rgba($darck-color, 1);
+              @extend.trans-4;
+              color: rgba($green-color, 1);
+            }
+            i {
+              font-size: 18px;
+
+              @extend.trans-4;
+              color: rgba($green-color, 1);
+              transform: rotate(180deg);
+            }
+          }
+          .parag {
+            font-size: 14px;
+            font-weight: 400;
+            color: rgba($darck-color, 1);
+          }
+        }
+      }
+    }
+  }
+}
+
+.team-section {
+  .team-box {
+    padding: 60px 0;
+    border-radius: 16px;
+    background-color: rgba($gray-color, 0.2);
+    .section-title {
+      text-align: center;
+      .title {
+        color: rgba($darck-color, 1);
+      }
+    }
+    .team-box-det {
+      margin: 20px 0;
+      .team-img {
+        border-radius: 10px;
+        height: 276px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .team-name {
+        font-size: 22px;
+        color: rgba($darck-color, 1);
+        margin: 10px 0;
+      }
+      .team-jop {
+        font-size: 16px;
+        color: rgba($darck-color, 0.8);
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .overview-section {
+    .startup-img {
+      flex-wrap: wrap;
+      img {
+        margin: 5px 0;
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .details-intro-section {
+    .section-title {
+      .title {
+        font-size: 30px;
+      }
+      .details-intro-box {
+        .intro-box {
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .salary-section {
+    .salary-content {
+      .salary-nmber {
+        margin: 20px 0;
+        font-size: 34px;
+      }
+      .invest-box {
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .salary-section {
+    .advantages-box {
+      .intro-count-box {
+        flex-wrap: wrap;
+        .count-box {
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+  .overview-section {
+    .detiles-box {
+      justify-content: flex-start;
+    }
+  }
+}
+
+@media (max-width: 772px) {
+  .overview-section {
+    .overview-box {
+      .prag {
+        font-size: 13px !important;
+      }
+    }
+  }
+  .overview-section {
+    .side-box {
+      .side-title {
+        font-size: 18px;
+      }
+      .traction-line {
+        .traction-content-box {
+          display: block;
+          .traction-content {
+            margin: 10px;
+            padding: 10px 0;
+            border-right: 0;
+            border-bottom: 1px solid rgba($gray-color, 0.1);
+          }
+        }
+      }
+    }
+  }
+  .overview-section {
+    .side-box {
+      .model-box {
+        .model-frist-line {
+          .model-title {
+            font-size: 13px;
+            span {
+              font-size: 11px;
+            }
+          }
+          a {
+            font-size: 14px;
+          }
+        }
+        .modle-number {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .overview-section {
+    .side-box {
+      .qa-content {
+        .taps-div {
+          .tap-content {
+            .ques-name {
+              .tap-title {
+                font-size: 12px;
+                padding: 0 5px 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .team-section {
+    .team-box {
+      .team-box-det {
+        .team-img {
+          height: 168px;
+        }
+        .team-name {
+          font-size: 13px;
+        }
+        .team-jop {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  .details-intro-section{
+     .section-title{
+        .details-intro-box{
+          display: block;
+          .prag{
+            width: 100%;
+          }
+          .intro-box{
+            justify-content: flex-end;
+          }
+        }
+      }
+    }
+    .sallary-box{
+       .sallary-number{
+          .number{
+            font-size: 13px !important;
+          }
+          .sllary-discr {
+            font-size: 14px !important;
+          }
+        }
+      }
+      .salary-section{
+         .salary-content{
+            .invest-box{
+              .link-box a {
+                padding: 10px 27px !important;
+            }
+               .count-investment{
+                  .count{
+                    font-size: 16px;
+
+                  }
+                  .count-discr {
+                    font-size: 12px;
+                  }
+                }
+              }
+            }
+          }
+          .overview-section{
+             .overview-box{
+               .overview-table{
+                 tr{
+                   th{
+                     font-size: 12px;
+                   }
+                   td{
+                    font-size: 12px;
+                    &.td-title {
+                      text-align: start;
+                      font-size: 12px;}
+                   }
+                 }
+               }
+                .table-box{
+                  overflow-x: scroll;
+                }
+              }
+            }
+  }
